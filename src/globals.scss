@@ -1,0 +1,28 @@
+$gray: #575757;
+$green: #667b68;
+$red: #e64946;
+$blue: #005b96;
+$textColor: #ffeead;
+// $active: #80001a;
+
+$mobileWidth: 768px;
+$thinDesktop: 1125px;
+$tabletWidth: 1024px;
+
+@mixin mobile {
+	@media (max-width: #{$mobileWidth}) {
+		@content;
+	}
+}
+
+@mixin thinDesktop {
+	@media (max-width: #{$thinDesktop}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (max-width: #{$tabletWidth}) {
+		@content;
+	}
+}
